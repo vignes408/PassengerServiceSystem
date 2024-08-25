@@ -17,19 +17,21 @@ public class CancelTicket {
 	private long phonenumber;
 	private String reason;
 	private String transactionid;
+	private int pnrno;
 	private String status = "pending";
 	
 	public CancelTicket() {
 		super();
 	}
 	
-	public CancelTicket(int cancelid, String passname, long phonenumber, String reason, String transactionid, String status) {
+	public CancelTicket(int cancelid, String passname, long phonenumber, String reason, String transactionid, String status, int pnrno) {
 		super();
 		this.cancelid = cancelid;
 		this.passname = passname;
 		this.phonenumber = phonenumber;
 		this.reason = reason;
 		this.transactionid = transactionid;
+		this.pnrno = pnrno;
 		this.status=status;
 	}
 	
@@ -62,6 +64,14 @@ public class CancelTicket {
 	}
 	public void setTransactionid(String transactionid) {
 		this.transactionid = transactionid;
+	}
+	
+	public int getPnrno() {
+		return pnrno;
+	}
+
+	public void setPnrno(int pnrno) {
+		this.pnrno = pnrno;
 	}
 
 	public String getStatus() {

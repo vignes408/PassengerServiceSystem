@@ -46,5 +46,9 @@ public class CancelTicketServiceImpl implements CancelTicketService {
 	public CancelTicket fetchId(int cancelid) {
 		return repo.findById(cancelid).get();
 	}
-	
+//	@Override
+//	public CancelTicket fetchPnr(int pnrno) {
+//		return repo.findById(pnrno).get();
+//	}
+//	
 }

@@ -54,5 +54,10 @@ public class CancelTicketController {
 	    public CancelTicket getCancelId(@PathVariable("cancelid") int cancelid) {
 	    	return service.fetchId(cancelid);
 	    }
-	    
+//	    
+//	    @GetMapping("/{pnrno}")
+//	    public CancelTicket getPnrNo(@PathVariable("pnrno") int pnrno) {
+//	    	return service.fetchPnr(pnrno);
+//	    }
+//	    
 }

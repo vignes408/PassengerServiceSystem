@@ -11,6 +11,7 @@ public interface CancelTicketService {
 	public CancelTicket approveRequest(int id);
 	public CancelTicket rejectRequest(int id);
 	CancelTicket fetchId(int cancelid);
+//	CancelTicket fetchPnr(int pnrno);
 	
 }
 
